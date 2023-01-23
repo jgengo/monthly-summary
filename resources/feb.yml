@@ -1,0 +1,22 @@
+---
+title: "january"
+
+subtitles:
+  - week00
+  - week01
+
+week00:
+  title: "week 00"
+
+week01:
+  title: "week 01"
+  outstanding:
+    - chatGPT talk
+  completed:
+    - Compute and send feedback about exam-master v3
+    - Trying new WiFi solution
+    - Giovanni's KPI presented to Risto
+    - Creation of Discord channels by curriculum ranks
+
+  delayed:
+    - Sim Piscine C 00, 01, 02
