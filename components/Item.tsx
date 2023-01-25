@@ -1,18 +1,18 @@
 import { ItemProps } from "./types";
 
-const textByState = {
+const textByState: any = {
   outstanding: "text-yellow-500",
   completed: "text-green-500",
   delayed: "text-red-500",
 };
 
-const markerByState = {
+const markerByState: any = {
   outstanding: "marker:text-yellow-400",
   completed: "marker:text-green-400",
   delayed: "marker:text-red-400",
 };
 
-const hasSpan = {
+const hasSpan: any = {
   outstanding: true,
   delayed: true,
   completed: false,

@@ -3,19 +3,27 @@ import CardHeader from "./CardHeader";
 import CardTitle from "./CardTitle";
 import Section from "./Section";
 
-import type { CardProps } from "./types";
+import type { CardProps, DocProps, SubtitleKey } from "./types";
 
 export default function Card({ doc, ok }: CardProps) {
+
+  const countTasks = (doc: DocProps) => {
+    return doc.subtitles.reduce((total: number, sub: SubtitleKey) => {
+      const completed = doc[sub].completed?.length ?? 0;
+      const outstanding = doc[sub].outstanding?.length ?? 0;
+      return total + completed + outstanding;
+    }, 0);
+  }
+
   return (
-    <div className="w-2/3 bg-mycardbg py-5 rounded-lg shadow-xl">
+    <div className="w-full bg-mycardbg py-5 rounded-lg shadow-xl ">
       <CardHeader />
 
       <CardTitle
         title={ok ? doc.title : "error"}
-        completedTasks={ok ? 12 : "none"}
+        completedTasks={ok ? countTasks(doc) : 0}
       />
 
-      {/* Card Content */}
       <section className="text-gray-800">
         <div className="py-5">
           <div className="grid gap-4 mx-4 sm:grid-cols-22">
