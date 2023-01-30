@@ -6,10 +6,12 @@ import type { DocProps } from "../../../components/types";
 
 export default function uWithId({ params }: any) {
   
+  const path = process.env.NODE_ENV == 'production' ? '/app/' : './'
+
   try {
     const doc = yaml.load(
       fs.readFileSync(
-        `./resources/${params.id}.yml`,
+        `${path}/resources/${params.id}.yml`,
         "utf8"
       )
     ) as DocProps;
