@@ -11,7 +11,10 @@
 
 `monthly-summary` is a small side-project I created to experiment with NextJS and TypeScript. It is currently being used to showcase a monthly summary of my team completed tasks at work and provide visibility to my team members.
 
-<br>
+**Example:**
+
+![screen](./.github/docs/screen01.png)
+
 
 # Local installation
 
