@@ -1,15 +1,15 @@
 import { ItemProps } from "./types";
 
 const textByState: any = {
-  outstanding: "text-yellow-500",
-  completed: "text-green-500",
-  delayed: "text-red-500",
+  outstanding: "text-lime-500",
+  completed: "text-neutral-400",
+  delayed: "text-red-400",
 };
 
 const markerByState: any = {
-  outstanding: "marker:text-yellow-400",
-  completed: "marker:text-green-400",
-  delayed: "marker:text-red-400",
+  outstanding: "marker:text-lime-500",
+  completed: "marker:text-green-500",
+  delayed: "marker:text-red-500",
 };
 
 const hasSpan: any = {
@@ -23,7 +23,7 @@ export default function Item({ state, text }: ItemProps) {
     <li className={`pl-4 marker:text-md ${markerByState[state]}`}>
       {text}
       {hasSpan[state] && (
-        <span className={`ml-2 ${textByState[state]} font-normal text-xs`}>
+        <span className={`ml-5 ${textByState[state]} font-normal text-sm`}>
           {state}
         </span>
       )}
