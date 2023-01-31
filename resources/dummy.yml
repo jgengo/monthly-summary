@@ -1,0 +1,19 @@
+title: "page title"
+subtitles:
+  - step0
+  - step1
+
+step0:
+  title: "my very first week"
+  completed:
+    - "hello"
+    - "world"
+
+step1:
+  title: "my second week"
+  outstanding:
+    - "Hey hey"
+  completed:
+    - "Oh oh"
+  delayed:
+    - "no no :("
