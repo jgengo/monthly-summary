@@ -2,16 +2,6 @@ import { Key } from "react";
 
 type SubtitleKey = string;
 
-// export type DocProps = {
-//   title: string,
-//   subtitles: [],
-//   [x: string]: {
-//     outstanding?: [],
-//     completed?: [],
-//     delayed?: []  
-//   }
-// }
-
 export type DocProps = Record<SubtitleKey, Subtitle> & {
   title: string
   subtitles: SubtitleKey[]

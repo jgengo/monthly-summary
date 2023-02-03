@@ -7,4 +7,16 @@
     .list-dot {
         @apply before:w-2 before:h-2 before:m-0 relative before:absolute before:rounded-full before:top-[calc(0.4rem)] before:-left-[1.9rem];
     }
+
+    .section {
+        @apply flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-3 sm:before:h-3 sm:before:rounded-full sm:before:left-[-33px] sm:before:z-[1] before:border-2 before:border-mypurple before:bg-mycardbg hover:before:bg-mypurple
+    }
+
+    .section-header {
+        @apply first-letter:text-lg font-semibold tracking-wide text-mypurple sm:before:border-t-2 before:w-12  before:absolute before:top-[13px] before:left-[-33px] before:border-solid before:border-mypurple sm:ml-6 uppercase font-mono
+    }
+
+    .sections-container {
+        @apply col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-mypurple
+    }
 }
