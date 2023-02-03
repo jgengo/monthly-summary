@@ -7,9 +7,9 @@ const textByState: any = {
 };
 
 const markerByState: any = {
-  outstanding: "marker:text-lime-500",
-  completed: "marker:text-green-500",
-  delayed: "marker:text-red-500",
+  outstanding: "before:bg-lime-500",
+  completed: "before:bg-green-500/80",
+  delayed: "before:bg-red-500",
 };
 
 const hasSpan: any = {
@@ -20,13 +20,13 @@ const hasSpan: any = {
 
 export default function Item({ state, text }: ItemProps) {
   return (
-    <li className={`pl-4 marker:text-md ${markerByState[state]}`}>
+    <p className={`list-dot before:content[''] ${markerByState[state]}`}>
       {text}
       {hasSpan[state] && (
         <span className={`ml-5 ${textByState[state]} font-normal text-sm`}>
           {state}
         </span>
       )}
-    </li>
+    </p>
   );
 }

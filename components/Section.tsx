@@ -9,7 +9,7 @@ export default function Section({ title, outstanding, completed, delayed }: Sect
       <h3 className="text-lg font-semibold tracking-wide text-mypurple sm:before:border-t-2 before:w-12  before:absolute before:top-[13px] before:left-[-33px] before:border-solid before:border-mypurple sm:ml-6 uppercase font-mono">
         {title}
       </h3>
-      <ul className="list-disc -ml-[17px] pt-1 space-y-1 text-sm font-semibold">
+      <div className="pt-1 space-y-1 text-sm font-semibold">
         {outstanding?.map((out: string, idx: Key) => {
           return <Item key={idx} text={out} state="outstanding" />;
         })}
@@ -21,7 +21,7 @@ export default function Section({ title, outstanding, completed, delayed }: Sect
         {delayed?.map((out: string, idx: Key) => {
           return <Item key={idx} text={out} state="delayed" />;
         })}
-      </ul>
+      </div>
     </div>
   );
 }

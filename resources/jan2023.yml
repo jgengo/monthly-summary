@@ -1,0 +1,47 @@
+---
+title: "january"
+
+subtitles:
+  - week02
+  - week03
+  - week04
+
+week02:
+  title: "week 02"
+  outstanding:
+    - chatGPT talk
+  completed:
+    - "Compute and send feedback about exam-master v3 to 42"
+    - "Trying new WiFi solution"
+    - "Presentation of Pedago KPI to Risto"
+    - "Creation of Discord channels by curriculum ranks"
+
+week03:
+  title: "week 03"
+  completed:
+    - "Cluster 1 has been closed"
+    - "Piscine setup checklist review"
+    - "Pulled data for the Quaterly report"
+    - "KPI overview/breakdown"
+    - "Work from cluster day trial"
+    - "Migration to the new curriculum breakdown"
+
+  delayed:
+    - "Sim Piscine C 00, 01, 02"
+
+week04:
+  title: "week 04"
+
+  outstanding:
+    - "Cluster 1 last rows migrated to stack V3"
+  
+  completed:
+    - "KPI macro-to-micros has been reviewed"
+    - "Exam deleted and recreated"
+    - "mac-test-titus-2 reset for Krista"
+    - "!interships commands now include new curriculum data"
+    - "Compiled 90d students progression report"
+    - "SQL Basic 01, 02"
+    - "Sim Piscine C 2, 3"
+
+  delayed:

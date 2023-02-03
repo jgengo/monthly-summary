@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .list-dot {
+        @apply before:w-2 before:h-2 before:m-0 relative before:absolute before:rounded-full before:top-[calc(0.4rem)] before:-left-[1.9rem];
+    }
+}
