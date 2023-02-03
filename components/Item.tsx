@@ -3,13 +3,13 @@ import { ItemProps } from "./types";
 const textByState: any = {
   outstanding: "text-lime-500",
   completed: "text-neutral-400",
-  delayed: "text-red-400",
+  delayed: "text-orange-400",
 };
 
 const markerByState: any = {
   outstanding: "before:bg-lime-500",
   completed: "before:bg-green-500/80",
-  delayed: "before:bg-red-500",
+  delayed: "before:bg-orange-500",
 };
 
 const hasSpan: any = {
